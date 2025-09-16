@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background-color:#444444  ;
+    height: 100vh;
+    width: 20%;
+    display: flex;
+ position: sticky;
+ top: 0;
+ bottom: 0;
+ left: 0;
+    justify-content: center;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 90%;
+    width: 90%;
+}
+header nav .logo h1{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+header nav .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+header nav .nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+header nav .nav-btn button{
+    height: 50px;
+    width: 160px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+#hero{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero .section-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#hero .section-text img{
+height: 200px;
+width: 200px;
+border-radius: 100px;
+object-fit: cover;
+}
+#hero .section-text h1{
+    font-size: 38px;
+    color: white;
+    letter-spacing: 1px;
+}
+#hero .section-text h1 span{
+    color:#04ABD5 ;
+    font-size: 38px;
+}
+#hero .section-text span{
+    color: #444444;
+    font-size: 20px;
+}
+#hero .section-text .social-links{
+    display: flex;justify-content: center;
+    align-items: center;gap: 15px;
+}
+#hero .section-text .social-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+
+}
+#about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    gap: 40px;
+    height: 600px;
+}
+#about .about-section1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+#about .about-section1 h1{
+    color: white;
+    font-size: 35px;
+    span{
+        color: #04ABD5;
+    }
+}
+#about .about-section1 p{
+    font-size: 18px;
+    color: white;
+    line-height: 25px;
+    font-weight: 200;
+}
+#about .about-section2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#about .about-section2 h1{
+    font-size: 19px;
+    color: #04ABD5;
+    word-spacing: 4px;
+    font-weight: 500;
+    line-height: 25px;
+    span{
+        color: white;
+    }
+}
+#work{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#work .work{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+#work .work  .work-heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;width: 100%;
+}
+#work .work  .work-heading h1{
+    color: white;
+    span{
+        color: #04ABD5;
+    }
+}
+#work .work  .work-content{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+    gap: 50px;
+ align-items: center;
+    
+}
+#work .work  .work-content .work-card{
+    width: 45%;
+    height: 250px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+gap: 20px;
+}
+#work .work  .work-content .work-card img{
+    height: 50px;
+}
+#work .work  .work-content .work-card h1{
+    font-size: 30px;
+    color: white;
+}
+#work .work  .work-content .work-card  p{
+    color: white;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+#testimonals{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#testimonals .testimonal{
+    width: 90%;
+    height: 90% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#testimonals .testimonal .testimonal-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#testimonals .testimonal .testimonal-heading h1{
+    font-size: 35px;
+    color: white;
+}
+#testimonals .testimonal .testimonal-heading .testimonal-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#testimonals .testimonal .testimonal-heading .testimonal-button  button{
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: #444444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#testimonals .testimonal .testimonal-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#testimonals .testimonal .testimonal-content  .testimonal-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 45%;
+    border: 2px solid #444444;
+    border-radius: 15px;
+    gap: 20px;
+    padding: 15px;
+}
+#testimonals .testimonal .testimonal-content  .testimonal-card img{
+    height: 80px;
+    border-radius: 100px;
+    position: sticky;
+    bottom: 34px;
+}
+#testimonals .testimonal .testimonal-content  .testimonal-card p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 26px;
+}
+#testimonals .testimonal .testimonal-content  .testimonal-card .testimonal-prof{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+#testimonals .testimonal .testimonal-content  .testimonal-card .testimonal-prof .testimonal-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    gap:10px;
+}
+#testimonals .testimonal .testimonal-content  .testimonal-card .testimonal-prof .testimonal-heading h1{
+    font-size: 18px;
+font-weight: 400;
+}
+#testimonals .testimonal .testimonal-content  .testimonal-card .testimonal-prof .testimonal-heading p{
+    color: #444444;
+font-size: 16px;
+}
+#testimonals .testimonal .testimonal-content  .testimonal-card .testimonal-prof .testimonal-icon h1{
+    color: #04ABD5;
+    font-size: 30px;
+}
+
+#testimonals .testimonal .testimonal-content  .testimonal-card .testimonal-text{
+    display: flex
+;
+flex-direction: column;
+gap: 20px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+#clients .clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    gap: 90px;
+}
+#clients .clients .clients-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#clients .clients .clients-heading h1{
+    color: white;font-size: 35px;
+}
+#clients .clients .clients-heading .clients-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#clients .clients .clients-heading .clients-button button{
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: #444444;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.clients-section{
+    display: flex;
+    justify-content: center
+    ;
+    align-items: center;
+    gap: 50px;
+    width: 90%;
+}
+.clients-section .client-card img{
+    height: 50px;
+}
+.clients-section .client-card {
+    width: 150px;
+}
+
+#pricing{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pricing .pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 90%;
+    height: 90%;
+}
+#pricing .pricing .pricing-heading{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#pricing .pricing .pricing-heading h1{
+    font-size: 35px;
+    color: white;
+}
+#pricing .pricing .pricing-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pricing .pricing .pricing-content .pricing-card{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 550px;
+    background-color: #444444;
+    justify-content: center;align-items: center;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 20px;
+    gap: 35px;
+}
+#pricing .pricing .pricing-content .pricing-card span{
+    color: white;
+    font-size: 19px;
+}
+#pricing .pricing .pricing-content .pricing-card .pricing-card-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+#pricing .pricing .pricing-content .pricing-card .pricing-card-heading h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+}
+#pricing .pricing .pricing-content .pricing-card .pricing-card-heading p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+#pricing .pricing .pricing-content .pricing-card .pricing-card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    flex-direction: column;
+    gap: 15px;
+}
+#pricing .pricing .pricing-content .pricing-card .pricing-card-text p{
+    color: white;
+    line-height: 24px;
+    font-size: 16px;
+}
+#pricing .pricing .pricing-content button{
+    height: 50px;
+    width: 160px;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#portfolio{
+    height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio .portfolio{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+#portfolio .portfolio .portfolio-heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+#portfolio .portfolio .portfolio-heading h1{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+#portfolio .portfolio .portfolio-links{
+display: flex;
+justify-content: start;
+align-items: center;
+width: 100%;
+gap: 30px
+;
+}
+#portfolio .portfolio .portfolio-links a{
+    text-decoration: none;
+    color: #444444;
+    font-size: 16px;
+}
+#portfolio .portfolio .portfolio-links a:nth-child(1){
+    color: white;
+}
+.portfolio-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.portfolio-content  .portfolio-card{
+    width: 47%;
+    height: 300px;
+    overflow: hidden;
+}
+.portfolio-content  .portfolio-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#contact{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contact{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+#contact .contact .contact-heading{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+#contact .contact .contact-heading h1{
+    color: white;
+    font-size: 35px;
+}
+#contact .contact .contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 80px;
+}
+#contact .contact .contact-content .contact-first{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+#contact .contact .contact-content .contact-first .contact-card{
+    height: 180px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #444444;
+    border-radius: 5px;
+}
+#contact .contact .contact-content .contact-first .contact-card h1{
+    color: #04ABD5;
+    font-size: 25px;
+}
+#contact .contact .contact-content .contact-first .contact-card span{
+    color: white;
+    font-size: 16px;
+}
+#contact .contact .contact-content .contact-second{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+#contact .contact .contact-content .contact-second .map{
+    height: 250px;
+    width: 100%;
+}
+#contact .contact .contact-content .contact-second iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#contact .contact .contact-content .contact-second .contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+#contact .contact .contact-content .contact-second .contact-form h1{
+    font-size: 35px;
+    
+    color: white;
+span{
+    color: #04ABD5;
+}
+}
+#contact .contact .contact-content .contact-second .contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    gap: 25px;
+}
+#contact .contact .contact-content .contact-second .contact-form form input{
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    border: 2px solid #444444;
+    background-color: transparent;
+    border-radius: 10px;
+}
+#contact .contact .contact-content .contact-second .contact-form form textarea{
+    width: 100%;
+    height: 150px;
+    padding-left: 10px;
+    border: 2px solid #444444;
+    background-color: transparent;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+button{
+    height: 50px;
+    width: 170px;
+    border-radius: 100px;
+    border: 2px solid #04ABD5;
+    color: #04ABD5;
+    background-color: transparent;
+    cursor: pointer;
+}
